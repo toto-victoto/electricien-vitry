@@ -1,22 +1,4 @@
 @import "tailwindcss";
 @source "../index.html";
-@theme {
-  --color-paper: #f6f2e8;
-  --color-ink: #20221e;
-  --color-acid: #e7ed56;
-  --font-sans: "DM Sans", sans-serif;
-}
-@layer base {
-  html { scroll-behavior: smooth; }
-  body { background: var(--color-paper); color: var(--color-ink); }
-  ::selection { background: var(--color-acid); color: var(--color-ink); }
-}
-@layer components {
-  .rule { border-top: 1px solid var(--color-ink); }
-  .eyebrow { font-size: .72rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 700; }
-  .hand { font-family: "Caveat", cursive; }
-  .arrow-link { display: inline-flex; align-items: center; gap: .7rem; border-bottom: 1px solid currentColor; padding-bottom: .35rem; transition: gap .2s; }
-  .arrow-link:hover { gap: 1.1rem; }
-  .service { border-top: 1px solid #20221e; padding: 1.35rem 0; display: grid; grid-template-columns: 2.5rem 1fr auto; gap: 1rem; align-items: baseline; }
-  .service:last-child { border-bottom: 1px solid #20221e; }
-}
+@theme { --font-sans: "DM Sans", sans-serif; --font-hand: "Kalam", cursive; }
+@layer base {html{scroll-behavior:smooth}body{overflow-x:hidden}img{display:block}}
