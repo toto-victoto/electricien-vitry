@@ -1,0 +1,11 @@
+{
+  "name": "electricien-vitry",
+  "private": true,
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/style.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/cli": "^4.1.0"
+  }
+}
